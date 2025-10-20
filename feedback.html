@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Зворотній зв’язок</title>
+</head>
+<body bgcolor="#e6ffe6">
+
+  <header bgcolor="#ff99cc" align="center">
+    <h1>Зворотній зв’язок</h1>
+  <nav>
+      <a href="index.html">Головна</a> |
+      <a href="table.html">Таблиця</a> |
+      <a href="contacts.html">Контакти</a> |
+      <a href="about.html">Про магазин</a> |
+      <a href="feedback.html">Зворотній зв’язок</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main align="center">
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Персональна інформація</legend>
+        <p>Прізвище та ім’я: <input type="text" name="fullname" required></p>
+        <p>E-mail: <input type="email" name="email" required></p>
+        <p>Вік: <input type="number" name="age" min="1" max="120" required></p>
+        <p>Освіта:
+          <select name="education" required>
+            <option value="">Оберіть</option>
+            <option value="повна">Повна</option>
+            <option value="неповна">Неповна</option>
+            <option value="вища">Вища</option>
+            <option value="професійна">Професійна</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <p>Мета зворотнього зв’язку:
+        <select name="purpose" required>
+          <option value="">Оберіть</option>
+          <option value="співпраця">Співпраця</option>
+          <option value="скарга">Скарга на порушення права власності</option>
+          <option value="пропозиція">Пропозиція</option>
+          <option value="помилка">Наявність помилки</option>
+        </select>
+      </p>
+
+      <p>Детально:
+        <br>
+        <textarea name="details" rows="5" cols="50" maxlength="500" placeholder="Опишіть детально..."></textarea>
+      </p>
+
+      <p>
+        <input type="checkbox" name="consent" required> Я погоджуюсь на обробку інформації
+      </p>
+
+      <p>
+        <input type="submit" value="Відправити">
+        <input type="reset" value="Очистити">
+      </p>
+    </form>
+  </main>
+
+  <hr>
+
+  <footer bgcolor="#ff99cc" align="center">
+    <p><a href="index.html">⬅ На головну</a></p>
+  </footer>
+
+</body>
+</html>

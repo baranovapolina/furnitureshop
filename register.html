@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Реєстрація — FurnitureMarket</title>
+</head>
+<body bgcolor="#e6ffe6">
+
+  <header bgcolor="#cccccc" align="center">
+    <h1>FurnitureMarket</h1>
+    <img src="images/logo.png" alt="Логотип FurnitureMarket" width="150" height="80">
+    <nav>
+      <a href="index.html">Головна</a> |
+      <a href="catalog.html">Каталог</a> |
+      <a href="table.html">Таблиця</a> |
+      <a href="feedback.html">Зворотній зв’язок</a> |
+      <a href="about.html">Про магазин</a> |
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main align="center">
+    <h2>Реєстрація нового користувача</h2>
+    <form id="registerForm">
+      <p>Ім’я користувача: <input type="text" id="username" required></p>
+      <p>Пароль: <input type="password" id="password" required></p>
+      <p><input type="submit" value="Зареєструватись"></p>
+    </form>
+
+    <p>Вже маєте акаунт? <a href="login.html">Увійти</a></p>
+
+    <img src="images/register_placeholder.jpg" alt="Зображення реєстрації" width="250" height="150">
+  </main>
+
+  <hr>
+
+  <footer bgcolor="#cccccc" align="center">
+    <p><a href="index.html">⬅ На головну</a></p>
+    <p>&copy; 2025 FurnitureMarket</p>
+  </footer>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      localStorage.setItem('user', JSON.stringify({ username, password }));
+
+      alert('Реєстрація успішна!');
+      window.location.href = 'login.html';
+    });
+  </script>
+
+</body>
+</html>
