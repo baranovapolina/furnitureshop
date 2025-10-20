@@ -22,9 +22,9 @@
 
   <main align="center">
     <h2>Вхід до власного кабінету</h2>
-    <form id="loginForm">
-      <p>Ім’я користувача: <input type="text" id="username" required></p>
-      <p>Пароль: <input type="password" id="password" required></p>
+    <form>
+      <p>Ім’я користувача: <input type="text" required></p>
+      <p>Пароль: <input type="password" required></p>
       <p><input type="submit" value="Увійти"></p>
     </form>
 
@@ -39,22 +39,5 @@
     <p><a href="index.html">⬅ На головну</a></p>
     <p>&copy; 2025 FurnitureMarket</p>
   </footer>
-
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      const storedUser = JSON.parse(localStorage.getItem('user'));
-
-      if (storedUser && storedUser.username === username && storedUser.password === password) {
-        alert('Вхід успішний!');
-        window.location.href = 'index.html';
-      } else {
-        alert('Невірний логін або пароль');
-      }
-    });
-  </script>
-
 </body>
 </html>

@@ -23,9 +23,9 @@
 
   <main align="center">
     <h2>Реєстрація нового користувача</h2>
-    <form id="registerForm">
-      <p>Ім’я користувача: <input type="text" id="username" required></p>
-      <p>Пароль: <input type="password" id="password" required></p>
+    <form>
+      <p>Ім’я користувача: <input type="text" required></p>
+      <p>Пароль: <input type="password" required></p>
       <p><input type="submit" value="Зареєструватись"></p>
     </form>
 
@@ -40,19 +40,5 @@
     <p><a href="index.html">⬅ На головну</a></p>
     <p>&copy; 2025 FurnitureMarket</p>
   </footer>
-
-  <script>
-    document.getElementById('registerForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-
-      localStorage.setItem('user', JSON.stringify({ username, password }));
-
-      alert('Реєстрація успішна!');
-      window.location.href = 'login.html';
-    });
-  </script>
-
 </body>
 </html>
