@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>FurnitureMarket — Головна</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body bgcolor="#e6ffe6">
-  <header bgcolor="#cccccc" align="center">
+
+<body>
+
+  <header class="main-header">
     <h1>FurnitureMarket</h1>
-    <img src="images/logo.png" alt="Логотип FurnitureMarket" width="150" height="150">
+
+    <!-- Абсолютно позиціонований логотип -->
+    <img src="images/logo.png" alt="Логотип FurnitureMarket" width="90" height="90">
 
     <nav>
       <a href="index.html">Головна</a> |
@@ -21,9 +26,9 @@
 
   <hr>
 
-  <main bgcolor="#ffffff" align="center">
+  <main class="grid-layout">
 
-    <article bgcolor="#e6f7ff" align="center" width="80%">
+    <article class="info-block animate-on-hover goal">
       <h2>Ласкаво просимо!</h2>
       <p>Ми спеціалізуємося на продажу сучасних меблів для дому та офісу.</p>
       <img src="images/welcome.jpg" alt="Привітальна картинка" width="300" height="200">
@@ -35,16 +40,19 @@
         <li>Забезпечити швидку доставку та монтаж.</li>
       </ol>
 
-      <p>
-        Приклад стилізованого речення: 
-        <span>Ці</span> <i>нові</i> <b>меблі</b> 
-        <em>вже</em> <u>доступні</u>.
-      </p>
+      <div class="long-text">
+        <p>
+          Наш магазин працює для того, щоб забезпечити клієнтів якісними меблями та 
+          комфортом у виборі. Ми орієнтуємося на сучасні тенденції та пропонуємо
+          широкий асортимент товарів.
+        </p>
+      </div>
 
       <p>
         <a href="login.html">Перейти у власний кабінет</a> &nbsp;|&nbsp;
         <a href="register.html">Зареєструватись</a>
       </p>
+
       <p>
         Корисні ресурси:
         <a href="https://www.ikea.com/ua/" target="_blank">IKEA Україна</a> |
@@ -52,19 +60,20 @@
       </p>
     </article>
 
-    <hr>
-
-    <aside bgcolor="#ffe6e6" align="center" width="80%">
+    <aside class="info-block">
       <h3>Наші контакти</h3>
-      <p>Адреса: м. Київ, вул. Незалежності, 15</p>
-      <p>Телефони: +38 (044) 123-45-67, +38 (067) 765-43-21</p>
-      <p>Email: info@furnituremarket.ua</p>
+      <address>
+        Адреса: м. Київ, вул. Незалежності, 15<br>
+        Телефони: +38 (044) 123-45-67, +38 (067) 765-43-21<br>
+        Email: info@furnituremarket.ua
+      </address>
     </aside>
 
   </main>
 
   <hr>
-  <footer bgcolor="#cccccc" align="center">
+
+  <footer>
     <p><a href="index.html">⬅ На головну</a></p>
     <p>&copy; 2025 FurnitureMarket</p>
   </footer>

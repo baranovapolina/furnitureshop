@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог меблів</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body bgcolor="#e6ffe6">
 
-  <header bgcolor="#99ccff" align="center">
+<body>
+
+  <header class="catalog-header">
     <h1>Каталог меблів</h1>
-    <img src="images/logo.png" alt="Логотип FurnitureMarket" width="150" height="150">
+
+    <!-- Логотип фіксується за вимогою -->
+    <img src="images/logo.png" alt="Логотип FurnitureMarket" width="90" height="90">
+
     <nav>
       <a href="index.html">Головна</a> |
       <a href="table.html">Таблиця</a> |
@@ -20,61 +25,50 @@
 
   <hr>
 
-  <main align="center">
+  <main class="grid-layout">
     <h2>Популярні товари</h2>
-    <table border="1" cellpadding="5" bgcolor="#ccf2ff", align="center">
-      <tr>
-        <td align="center" width="200">
-          <img src="images/sofa.jpg" alt="Диван" width="150"><br>
-          <b>Диван «Люкс»</b><br>
-          Матеріал: Шкіра<br>
-          Колір: Чорний<br>
-          Ціна: 8900 грн
-        </td>
-        <td align="center" width="200">
-          <img src="images/desk.jpg" alt="Стіл" width="150"><br>
-          <b>Стіл «Офісний»</b><br>
-          Матеріал: Дерево<br>
-          Колір: Коричневий<br>
-          Ціна: 3500 грн
-        </td>
-        <td align="center" width="200">
-          <img src="images/chair.jpg" alt="Стілець" width="150"><br>
-          <b>Стілець «Комфорт»</b><br>
-          Матеріал: Метал/Тканина<br>
-          Колір: Сірий<br>
-          Ціна: 1200 грн
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-          <img src="images/wardrobe.jpg" alt="Шафа" width="150"><br>
-          <b>Шафа «Модерн»</b><br>
-          Матеріал: ДСП<br>
-          Колір: Білий<br>
-          Ціна: 5600 грн
-        </td>
-        <td align="center">
-          <img src="images/bed.jpg" alt="Ліжко" width="150"><br>
-          <b>Ліжко «Релакс»</b><br>
-          Матеріал: Дерево<br>
-          Колір: Бежевий<br>
-          Ціна: 7300 грн
-        </td>
-        <td align="center">
-          <img src="images/cabinet.jpg" alt="Тумба" width="150"><br>
-          <b>Тумба «Міні»</b><br>
-          Матеріал: МДФ<br>
-          Колір: Горіх<br>
-          Ціна: 1800 грн
-        </td>
-      </tr>
-    </table>
+
+    <div class="product-card">
+      <img src="images/sofa.jpg" alt="Диван" width="150">
+      <p class="product-title">Диван «Люкс»</p>
+      <p>Матеріал: Шкіра<br>Колір: Чорний<br>Ціна: 8900 грн</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/desk.jpg" alt="Стіл" width="150">
+      <p class="product-title">Стіл «Офісний»</p>
+      <p>Матеріал: Дерево<br>Колір: Коричневий<br>Ціна: 3500 грн</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/chair.jpg" alt="Стілець" width="150">
+      <p class="product-title">Стілець «Комфорт»</p>
+      <p>Матеріал: Метал/Тканина<br>Колір: Сірий<br>Ціна: 1200 грн</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/wardrobe.jpg" alt="Шафа" width="150">
+      <p class="product-title">Шафа «Модерн»</p>
+      <p>Матеріал: ДСП<br>Колір: Білий<br>Ціна: 5600 грн</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/bed.jpg" alt="Ліжко" width="150">
+      <p class="product-title">Ліжко «Релакс»</p>
+      <p>Матеріал: Дерево<br>Колір: Бежевий<br>Ціна: 7300 грн</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cabinet.jpg" alt="Тумба" width="150">
+      <p class="product-title">Тумба «Міні»</p>
+      <p>Матеріал: МДФ<br>Колір: Горіх<br>Ціна: 1800 грн</p>
+    </div>
+
   </main>
 
   <hr>
 
-  <footer bgcolor="#99ccff" align="center">
+  <footer>
     <p><a href="index.html">⬅ На головну</a></p>
   </footer>
 
