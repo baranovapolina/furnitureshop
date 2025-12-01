@@ -4,34 +4,31 @@
   <meta charset="UTF-8">
   <title>FurnitureMarket — Головна</title>
   <link rel="stylesheet" href="css/styles.css">
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> </head>
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header" id="main-header">
     <h1>FurnitureMarket</h1>
+    <img src="images/logo.png" alt="Логотип FurnitureMarket" class="logo">
 
-    <!-- Абсолютно позиціонований логотип -->
-    <img src="images/logo.png" alt="Логотип FurnitureMarket" width="90" height="90">
-
-    <nav>
-      <a href="index.html">Головна</a> |
-      <a href="catalog.html">Каталог</a> |
-      <a href="contacts.html">Контакти</a> |
-      <a href="table.html">Таблиця</a> |
-      <a href="about.html">Про магазин</a> |
-      <a href="feedback.html">Зворотній зв’язок</a>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="table.html">Таблиця</a></li>
+        <li><a href="about.html">Про магазин</a></li>
+        <li><a href="feedback.html">Зворотній зв’язок</a></li>
+      </ul>
     </nav>
   </header>
 
-  <hr>
-
   <main class="grid-layout">
-
     <article class="info-block animate-on-hover goal">
       <h2>Ласкаво просимо!</h2>
       <p>Ми спеціалізуємося на продажу сучасних меблів для дому та офісу.</p>
-      <img src="images/welcome.jpg" alt="Привітальна картинка" width="300" height="200">
+      <img src="images/welcome.jpg" alt="Привітальна картинка" style="max-width: 100%; height: auto;">
 
       <h3>Мета створення магазину</h3>
       <ol type="i">
@@ -40,23 +37,9 @@
         <li>Забезпечити швидку доставку та монтаж.</li>
       </ol>
 
-      <div class="long-text">
-        <p>
-          Наш магазин працює для того, щоб забезпечити клієнтів якісними меблями та 
-          комфортом у виборі. Ми орієнтуємося на сучасні тенденції та пропонуємо
-          широкий асортимент товарів.
-        </p>
-      </div>
-
       <p>
         <a href="login.html">Перейти у власний кабінет</a> &nbsp;|&nbsp;
         <a href="register.html">Зареєструватись</a>
-      </p>
-
-      <p>
-        Корисні ресурси:
-        <a href="https://www.ikea.com/ua/" target="_blank">IKEA Україна</a> |
-        <a href="https://epicentrk.ua/" target="_blank">Епіцентр</a>
       </p>
     </article>
 
@@ -64,19 +47,15 @@
       <h3>Наші контакти</h3>
       <address>
         Адреса: м. Київ, вул. Незалежності, 15<br>
-        Телефони: +38 (044) 123-45-67, +38 (067) 765-43-21<br>
-        Email: info@furnituremarket.ua
+        Телефони: +38 (044) 123-45-67
       </address>
     </aside>
-
   </main>
 
-  <hr>
-
   <footer>
-    <p><a href="index.html">⬅ На головну</a></p>
     <p>&copy; 2025 FurnitureMarket</p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

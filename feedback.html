@@ -4,71 +4,46 @@
   <meta charset="UTF-8">
   <title>Зворотній зв’язок</title>
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body bgcolor="#e6ffe6", align="center">
+<body class="center-content">
 
-  <header bgcolor="#ff99cc">
+  <header>
     <h1>Зворотній зв’язок</h1>
-  <nav>
-      <a href="index.html">Головна</a> |
-      <a href="table.html">Таблиця</a> |
-      <a href="contacts.html">Контакти</a> |
-      <a href="about.html">Про магазин</a> |
-      <a href="feedback.html">Зворотній зв’язок</a>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="table.html">Таблиця</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="about.html">Про магазин</a></li>
+        <li><a href="feedback.html">Зворотній зв’язок</a></li>
+      </ul>
     </nav>
   </header>
-
-  <hr>
 
   <main>
     <form action="#" method="post" class="feedback-form">
       <fieldset>
         <legend>Персональна інформація</legend>
-        <p>Прізвище та ім’я: <input type="text" name="fullname" required></p>
+        <p>Ім’я: <input type="text" name="fullname" required></p>
         <p>E-mail: <input type="email" name="email" required></p>
-        <p>Вік: <input type="number" name="age" min="1" max="120" required></p>
-        <p>Освіта:
-          <select name="education" required>
-            <option value="">Оберіть</option>
-            <option value="повна">Повна</option>
-            <option value="неповна">Неповна</option>
-            <option value="вища">Вища</option>
-            <option value="професійна">Професійна</option>
-          </select>
-        </p>
       </fieldset>
 
-      <p>Мета зворотнього зв’язку:
-        <select name="purpose" required>
-          <option value="">Оберіть</option>
-          <option value="співпраця">Співпраця</option>
-          <option value="скарга">Скарга на порушення права власності</option>
-          <option value="пропозиція">Пропозиція</option>
-          <option value="помилка">Наявність помилки</option>
-        </select>
-      </p>
+      <div class="tooltip-container">
+          <p>Детально:<br>
+            <textarea id="details-area" name="details" rows="5" cols="50" placeholder="Опишіть детально..."></textarea>
+          </p>
+          <span id="tooltip-msg" class="tooltip-box">Ваша думка для нас важлива! Конкретизуйте мету звернення, будь ласка</span>
+      </div>
 
-      <p>Детально:
-        <br>
-        <textarea name="details" rows="5" cols="50" maxlength="500" placeholder="Опишіть детально..."></textarea>
-      </p>
-
-      <p>
-        <input type="checkbox" name="consent" required> Я погоджуюсь на обробку інформації
-      </p>
-
-      <p>
-        <input type="submit" value="Відправити">
-        <input type="reset" value="Очистити">
-      </p>
+      <p><input type="submit" value="Відправити"></p>
     </form>
   </main>
 
-  <hr>
-
-  <footer bgcolor="#ff99cc" align="center">
+  <footer>
     <p><a href="index.html">⬅ На головну</a></p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
